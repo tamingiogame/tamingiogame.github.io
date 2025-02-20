@@ -597,3 +597,44 @@ footer a:hover {
         font-size: 12px;
     }
 }
+
+
+/* Target the article element */
+article {
+    max-width: 100%; /* Make it full width */
+    margin: 0; /* Remove any previous margins */
+    padding: 20px; /* Add padding for content spacing */
+    background-color: #1e1e1e; /* Match your website's background color */
+    color: #ffffff; /* Ensure text is visible against the dark background */
+    border-radius: 0; /* Remove border radius if you don't want rounded corners */
+    box-shadow: none; /* Remove box shadow if you don't want it */
+}
+
+/* Style the headings within the article */
+article h1,
+article h2,
+article h3 {
+    color: #00ffff; /* Cyan headings */
+}
+
+/* Style paragraphs within the article */
+article p {
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+/* Style lists within the article */
+article ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 1em;
+}
+
+/* Style links within the article */
+article a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
