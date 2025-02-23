@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub - Category</title>
+    <meta name="description" content="Browse exciting games in this category.">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="manifest" href="../manifest.json">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
 
+<body class="category-page">
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Game Hub Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../category/car/index.html">Car</a></li>
+                <li><a href="../category/action/index.html">Action</a></li>
+                <li><a href="../category/skill/index.html">Skill</a></li>
+            </ul>
+        </nav>
+        <div class="controls">
+            <i id="search-icon" class="fas fa-search" onclick="openSearchSection()"></i>
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="category-title">Category Games</h2>
+
+        <!-- Game Grid for the selected category -->
+        <div class="game-grid" id="game-grid">
+            <!-- Games will be dynamically added here -->
+        </div>
+
+        <p id="no-results" style="display: none; text-align: center; color: red;">No games found.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Game Hub. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
