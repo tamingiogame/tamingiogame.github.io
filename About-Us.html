@@ -55,37 +55,31 @@
         }
 
         .content {
-            flex: 1;
-            padding: 40px; /* Increased padding */
-            max-width: 1080px; /* Adjusted max-width */
-            margin: 40px auto; /* Increased margin top/bottom */
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        }
+    flex: 1;
+    padding: 50px; /* Increased padding */
+    max-width: 960px; /* Adjusted max-width for document look */
+    margin: 50px auto; /* Increased margin top/bottom */
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center horizontally */
+}
 
-        h1, h2 {
-            color: #00FFFF;
-        }
+h1, h2 {
+    color: #00FFFF;
+    text-align: center; /* Center headings */
+    width: 100%; /* Ensure headings take full width */
+}
 
-        p {
-            margin-bottom: 20px;
-            line-height: 1.7;
-            font-size: 0.95em; /* Slightly smaller font size for paragraphs */
-        }
-
-        h1 {
-            font-size: 2em; /* Adjusted heading size */
-            margin-bottom: 15px;
-            text-align: center; /* Centered main heading */
-        }
-
-        h2 {
-            font-size: 1.5em; /* Adjusted subheading size */
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-
+p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 0.95em;
+    max-width: 800px; /* Set max-width for paragraphs */
+    text-align: justify; /* Justify text for document style */
+}
         .footer {
             background-color: #222;
             padding: 15px 20px; /* Adjusted padding */
@@ -103,7 +97,7 @@
     </style>
 </head>
 
-<body class="category-page">
+<body>
     <header>
         <div class="logo">
             <a href="../index.html">
