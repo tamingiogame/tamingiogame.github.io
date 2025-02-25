@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../styles.css">
     <link rel="manifest" href="../manifest.json">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
+   <style>
         body {
             font-family: 'Orbitron', sans-serif;
             background-color: #111;
@@ -22,7 +22,7 @@
 
         .header {
             background-color: #222;
-            padding: 15px 20px; /* Adjusted padding */
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -31,7 +31,7 @@
 
         .logo {
             color: #00FFFF;
-            font-size: 1.6em; /* Adjusted logo size */
+            font-size: 1.6em;
             text-decoration: none;
             font-weight: bold;
         }
@@ -43,8 +43,8 @@
         .nav a {
             color: #eee;
             text-decoration: none;
-            margin-left: 20px; /* Adjusted spacing */
-            padding: 8px 12px; /* Adjusted padding */
+            margin-left: 20px;
+            padding: 8px 12px;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -54,40 +54,48 @@
             background-color: #333;
         }
 
-       .content {
-            flex: 1;
-            padding: 40px; /* Increased padding */
-            max-width: 1080px; /* Adjusted max-width */
-            margin: 40px auto; /* Increased margin top/bottom */
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-        }
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            padding: 50px;
+        }
 
-        h1, h2 {
-            color: #00FFFF;
-        }
+        .document { /* New class for document-like styling */
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            max-width: 800px; /* Set a max-width for the document */
+            padding: 40px;
+            margin: 0 auto; /* Center the document within .content */
+        }
 
-        p {
-            margin-bottom: 20px;
-            line-height: 1.7;
-            font-size: 0.95em; /* Slightly smaller font size for paragraphs */
-        }
+        h1, h2 {
+            color: #00FFFF;
+        }
 
-        h1 {
-            font-size: 2em; /* Adjusted heading size */
-            margin-bottom: 15px;
-            text-align: center; /* Centered main heading */
-        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
 
-        h2 {
-            font-size: 1.5em; /* Adjusted subheading size */
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
         .footer {
             background-color: #222;
-            padding: 15px 20px; /* Adjusted padding */
+            padding: 15px 20px;
             text-align: center;
             color: #eee;
             font-size: smaller;
@@ -97,7 +105,7 @@
         .footer a {
             color: #00FFFF;
             text-decoration: none;
-            margin: 0 8px; /* Adjusted spacing */
+            margin: 0 8px;
         }
     </style>
 </head>
